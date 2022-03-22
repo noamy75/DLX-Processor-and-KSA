@@ -3,10 +3,11 @@
 This repo includes a DLX assembly implementation of the Key Scheduling Algorithm (KSA).  
 This algorithm is known as the first step in the RC4 stream cipher algorithm.  
 The goal of KSA is generating a pseudo-random permutation of a 256-byte array (S) based on a 16-byte key (K).  
+This code was tested on a DLX processor I designed, running on FPGA.
   
 In KSA, the first step is initializing a 256-byte vector (S) with the identity permutation, meaning the values in the array are equal to their index.  
 The next step is shuffling the array in a pseudo-random manner, making it a permutation array.  
-
+  
 Hereby presented the C implementation of the algorithm. Though it seems quite short, the Assembly implementation is a little bit longer...  
 
 int i;  
