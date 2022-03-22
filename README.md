@@ -9,13 +9,13 @@ The next step is shuffling the array in a pseudo-random manner, making it a perm
 
 Hereby presented the C implementation of the algorithm. Though it seems quite short, the Assembly implementation is a little bit longer...  
 
-int i;
-for (i = 0; i < 256; i++){
-    S[i] = i;
-}
-
-int j = 0;
-for (i = 0; i < 256; i++){
-    j = mod(j + S[i] + key[mod(i, 16)], 256);
-    swap(S[i], S[j]);
-}
+int i;  
+for (i = 0; i < 256; i++){  
+    S[i] = i;  
+}  
+  
+int j = 0;  
+for (i = 0; i < 256; i++){  
+    j = mod(j + S[i] + key[mod(i, 16)], 256);  
+    swap(S[i], S[j]);  
+}  
