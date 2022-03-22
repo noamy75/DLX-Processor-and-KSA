@@ -1,7 +1,8 @@
 # DLX Processor  
   
 A full design of a DLX processor, including all Datapath elements such as ALU, GPR, MMU, etc. and Control elements such as MAC, Control State Machine.
-
+The program used for this matter is the XILINX ISE Design Suite.  
+  
 # Key-Scheduling-Algorithm
   
 An assembly implementation of the Key Scheduling Algorithm (KSA). This algorithm is known as the first step in the RC4 stream cipher algorithm. The goal of KSA is generating a pseudo-random permutation of a 256-byte array (S) based on a 16-byte key (K).  
