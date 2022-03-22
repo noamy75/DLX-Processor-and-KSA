@@ -14,7 +14,7 @@ slli R7 R7                  # R7 << 1
 slli R7 R7                  # R7 << 1 -> R7 = 0x00010000
 addi R7 R7 0x203            # R7 = 0x00010203 (S[0] S[1] S[2] S[3])
 
-addi R8 R0 0x4040     # R8 = 0x4040
+addi R8 R0 0x4040           # R8 = 0x4040
 slli R8 R8                  # R8 << 1
 slli R8 R8                  # R8 << 1
 slli R8 R8                  # R8 << 1
@@ -29,10 +29,10 @@ slli R8 R8                  # R8 << 1
 slli R8 R8                  # R8 << 1 -> R8 = 0x04040000
 addi R8 R8 0x404            # R8 = 0x04040404
 
-LOOP1: sgei R6 R4 0x48 		# if (S >= 8 + 64) - last address is 71    
+LOOP1: sgei R6 R4 0x48 	    # if (S >= 8 + 64) - last address is 71    
 bnez R6 LOOP2               # finished first loop, branch to second loop
 sw R7 R4 0x0                # S[i] = i
-add R7 R7 R8               # S[i] -> S[i + 4]
+add R7 R7 R8                # S[i] -> S[i + 4]
 addi R4 R4 0x1              # S = S + 1
 beqz R0 LOOP1               # go to start of LOOP1
 
