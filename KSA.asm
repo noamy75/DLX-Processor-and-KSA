@@ -1,5 +1,5 @@
-beqz R0 begin
-pc = 0x50
+beqz R0 begin               # program starts at function "begin"
+pc = 0x50                   # tell compiler to place code at address 0x50. lower addresses are used for data (K and S arrays)
 
 begin: addi R10 R0 0xFFFF   # R10 = 0xFFFFFFFF
 addi R12 R0 0xFF            # R12 = 0xFF
