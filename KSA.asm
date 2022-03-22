@@ -14,7 +14,7 @@ slli R7 R7                  # R7 << 1
 slli R7 R7                  # R7 << 1 -> R7 = 0x00010000
 addi R7 R7 0x203            # R7 = 0x00010203 (S[0] S[1] S[2] S[3])
 
-addi R8 R0 0x4040 	        # R8 = 0x4040
+addi R8 R0 0x4040     # R8 = 0x4040
 slli R8 R8                  # R8 << 1
 slli R8 R8                  # R8 << 1
 slli R8 R8                  # R8 << 1
